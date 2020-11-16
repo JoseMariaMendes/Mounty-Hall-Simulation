@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class Main {
+    public static int SIMAMOUNT = 100000;
     public static void main(String[] args) {
 
         boolean a;
@@ -8,9 +9,9 @@ public class Main {
         boolean c;
         int cont = 0;
         String door, showndoor;
-        boolean[] newDoor = new boolean[10000];
+        boolean[] newDoor = new boolean[SIMAMOUNT];
         Random r = new Random();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < SIMAMOUNT; i++) {
             a = r.nextBoolean();
             if (a) {
                 b = false;
@@ -42,9 +43,9 @@ public class Main {
                 cont++;
         }
 
-        System.out.println("Guest guessed " + cont + " out of 10000 times");
-        int val = (cont*100)/10000;
-        System.out.println(val);
+        System.out.println("Guest guessed " + cont + " out of "+ SIMAMOUNT + " times");
+        int val = (cont*100)/SIMAMOUNT;
+        System.out.println(val +"% of times");
     }
 
     public static String PickDoor() {
