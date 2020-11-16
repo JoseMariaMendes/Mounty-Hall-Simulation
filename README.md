@@ -1,2 +1,2 @@
 # Mounty-Hall-Simulation
-Mounty Hall simulation out of 10000 experiences 
+Mounty Hall simulation out of 100000 experiences 
